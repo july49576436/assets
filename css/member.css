@@ -1,0 +1,114 @@
+body {
+    background-color: #f5f4ef;
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    position: absolute;
+    left: 0;
+
+
+}
+
+nav {
+    text-align: center;
+    background-color: #857B74;
+}
+
+nav a {
+    padding: 16px;
+    color: white;
+    font-size: large;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #908781;
+    color: white
+}
+
+.iconarea {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.icon:hover {
+    transform: scale(1.2, 1.2);
+}
+
+section {
+    position: relative;
+    left: 350px;
+    width: 800px;
+    line-height: 40px;
+}
+
+.form {
+    display: none;
+    position: absolute;
+    left: 250px;
+    top: 200px;
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    color: #908781;
+    border-radius: 25px;
+    line-height: 40px;
+    letter-spacing: 5px;
+}
+
+.link-button {
+    font-size: 1cm;
+    background: none;
+    border: none;
+    color: #908781;
+    cursor: pointer;
+    padding: 0;
+    font-weight: normal;
+
+}
+
+.link-button.txt1 {
+    position: absolute;
+    left: 250px;
+    top: 150px;
+}
+
+.link-button.txt2 {
+    position: absolute;
+    left: 400px;
+    top: 150px;
+}
+
+.link-button.active {
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #857B74;
+    color: white;
+    width: 60px;
+    height: 40px;
+    border-width: 0px;
+    margin-left: 90%;
+}
+
+.btn:hover {
+    background-color: #9A928C;
+}
+
+footer {
+    background-color: #6E6A6F;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    top: 600px;
+    width: 100%;
+}

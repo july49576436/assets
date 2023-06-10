@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARTISAN</title>
+  <link rel="stylesheet" href="css/ARTISAN.css">
+    <!--收合購物車-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#collapse").on("click",function(){
+                $("#sidebar").toggleClass("active");
+
+            })
+        })
+    </script>
+</head>
+
+<body>
+  <header>
+      <a href="index.html">
+        <img src="images/logo.jpg" height="56px"weight="400px"></a>
+  </header>
+  <nav>
+    <a href="index.html">首頁</a>
+      <a href="aboutus.html">關於我們</a>
+      <a href="products.html">所有商品</a>
+      <a href="modifyinfor.html">會員中心</a>
+      <a href="bord.html">留言板</a>
+  </nav>
+  <div class="iconarea">
+    <a href="contactus.html"><img class="icon" src="images/chat.png"></a>
+    <a href="member.html"><img class="icon" src="images/member.png"></a>
+  </div>
+  <div class="container-all">
+    <div class="container-left">
+     <!-- 商品 -->
+      <div class="show">
+      <!-- <h2 style="text-align:center">Slideshow Gallery</h2> -->
+
+      <div class="container">
+        <div class="mySlides">
+          <div class="numbertext">1 / 5</div>
+          <img src="images/p2-1.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 5</div>
+          <img src="images/p2-2.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 5</div>
+          <img src="images/p2-3.jpg" style="width:100%">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">4 / 5</div>
+          <img src="images/p2-4.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 5</div>
+          <img src="images/p2-5.jpg" style="width:100%">
+        </div>
+          
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="images/p2-1.jpg" style="width:100%" onclick="currentSlide(1)" alt="正面圖">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/p2-2.jpg" style="width:100%" onclick="currentSlide(2)" alt="整體外觀">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/p2-3.jpg" style="width:100%" onclick="currentSlide(3)" alt="左側圖">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/p2-4.jpg" style="width:100%" onclick="currentSlide(4)" alt="下側圖">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/p2-5.jpg" style="width:100%" onclick="currentSlide(5)" alt="系列介紹">
+          </div>    
+
+        </div>
+      </div>
+      </div>
+      <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+    <!-- 商品文字 -->
+      <aside>
+          <h1>牛皮復古打字機鍵盤</h1><br>
+              <!-- 和ELWOOD同系列 -->
+          <h4>RETRO CLASSIC ARTISAN BT</h4><br><br>
+          <h3 class="price">$7590</h3><br><br>
+
+        <div class="introtxt">
+          <h4><b>產品介紹</b></h4><hr width=40% size=3>
+          <div class="introduce">
+              <h4>奢華精品設計<br>
+                  懷舊打字機款<br>
+                  牛皮手工製作<br>
+                  鋅鋁合金框架<br>
+                  鍵帽中心發光<br>
+                  回充高續航力<br>
+                  獨家開發Typelit機械軸心<br>
+                  Windows與macOS雙系統適用<br>
+                  BT (Bluetooth) 無線藍芽版</h4><br>
+          </div><br>
+        </div>
+          <h4><b>數量</b></h4><br>
+
+          <div>
+            <input type="button" value="-" class="btn" onclick="minus(0)" style="width:25px;height:20px;background-color: #91735e;border-width: 0; border-radius: 15%;color: white;"  >
+            <input type="text" value="1" class="input_num" style="width:50px;height:22px;border-width: thin">
+            <input type="button" value="+" class="btn" onclick="add(0)" style="width:25px;height:20px;background-color: #91735e;border-width: 0; border-radius: 15%;color: white;">
+          </div>
+          <script>
+              function minus(ctn_num){
+                    var num = Number(document.getElementsByClassName("input_num")[ctn_num].value);
+                    if(num>1){
+                        document.getElementsByClassName("input_num")[ctn_num].value = num-1;
+                    }
+                }
+        
+                function add(ctn_num){
+                    var num = Number(document.getElementsByClassName("input_num")[ctn_num].value);      
+                    if(num<100){
+                        document.getElementsByClassName("input_num")[ctn_num].value = num+1;
+                    }
+                }
+            </script>
+          <div class="goshop">
+            <a href="(請更換網址至購物車)"><input type="submit" value="加入購物車" class="btn" style="position: relative; left:0px; top:60px "></a>
+          </div>
+      </aside>
+      <div style="clear:both"></div>
+    </div>
+    <div class="container-right ">
+      <div id="sidebar">
+          <button type="button" id="collapse" class="collapse-btn">
+          <img src="images/shopping-cart.png" alt="">
+          </button>
+          <h1 style="text-align:center ;">購物車</h1><hr><br>
+          <form>
+              <div class="car1">
+                  <input type="checkbox" value="1" name="Product_1" style="float: left;"> <br>
+                  <a href="" class="bin"><img src="images/bin.png" width="20" height="20"alt="" style="float: right;"></a>
+                  <img src="images/a1-1.jpg" width="230" height="230" alt="" style="border-radius:10%">
+                  
+                  <h6><b>DOT “Blossom” 藍牙機械鍵盤</h6>
+                  <h6>數量:</h6>
+                  <div class="plusminus">
+                      <input type="number" name="setnumber" value="1" min="1" max="20" width="10" class="number">
+                  </div>
+                  <br>
+                  <h4><b><i>$5200</i></b></h4> 
+              </div>
+              <hr  width=100% size=4><br>
+              <div class="car1">
+                  <input type="checkbox" value="1" name="Product_1" style="float: left;"> <br>
+                  <a href="" class="bin"><img src="images/bin.png" width="20" height="20"alt="" style="float: right;"></a>
+                  <img src="images/m1-1.jpg" width="230" height="230" alt="" style="border-radius:10%">
+                  
+                  <h6><b>DOT “Milk Tea” 藍牙機械鍵盤</h6>
+                  <h6>數量:</h6>
+                  <div class="plusminus">
+                      <input type="number" name="setnumber" value="1" min="1" max="20" width="10" class="number">
+                  </div>
+                  <br>
+                  <h4><b><i>$6000</i></b></h4>
+              </div>
+                  <hr  width=100% size=4><br>
+              <div class="car1">
+                  <input type="checkbox" value="1" name="Product_1" style="float: left;"> <br>
+                  <a href="" class="bin"><img src="images/bin.png" width="20" height="20"alt="" style="float: right;"></a>
+                  <img src="images/t1-1.jpg" width="230" height="230" alt="" style="border-radius:10%">
+                  
+                  <h6><b>DOT “Typewriter” 藍牙機械鍵盤</h6>
+                  <h6>數量:</h6>
+                  <div class="plusminus">
+                      <input type="number" name="setnumber" value="1" min="1" max="20" width="10" class="number">
+                  </div>
+                  <br>
+                  <h4><b><i>$4200</i></b></h4><br>
+              </div>
+              <hr  width=100% size=4>
+              折扣代碼:<input type="text"><br><br>
+              <h4>總價:$15400</h4><br>
+              <div class="submitbtn">
+                  <a href="buy.html"><input type="button" value="送出訂單" class="submit" ></a>
+              </div>
+          </form>
+      </div>
+    </div>
+    </div> 
+  <!-- 評論區 -->
+  <section class="content2" id="activity">
+      <h3 class="subtitle2"> ⭐商品評論⭐</h3>
+      <main class="main2">
+        <section>
+    <div class="wrap">
+      <div><h3 class="h33">勇威</div>
+      <img src="images/man1.png " height="100px" weight="100px" style="border-radius:100%" />
+      <!-- 星星 -->
+      <div class="ratings">
+        <div class="empty_star">★★★★★</div>
+        <div class="full_star">★★★★★</div>
+      </div>
+      <!-- 星星 -->
+      <div class="card2">
+      <p class="h46">
+        <br><br>買這個鍵盤用來工作<br><br>工作效率倍增!
+      </p>
+      </div>
+    </div>
+      </main>
+    </section>
+    <div style="clear:both"></div>
+
+    <section>
+      <div class="wrap2">
+        <div><h3 class="h33">彩霞</div>
+        <img src="images/woman1.png " height="100px" weight="100px" style="border-radius:100%" />
+        <!-- 星星 -->
+        <div class="ratings">
+          <div class="empty_star">★★★★★</div>
+          <div class="full_starr">★★★★★</div>
+          </div>
+        <!-- 星星 -->
+
+        <div class="card3">
+        <p class="h46">
+          <br><br>平時用來寫稿<br><br>使用體驗滑順流暢!
+        </p>
+      </div>
+      </div>
+        </main>
+      </section>
+    <div style="clear:both"></div>
+    <section class="content3">
+        <h3 class="subtitle2"> ⭐留下評論⭐</h3>
+        <main class="main3">
+            <div class="text">
+              <form>
+                名字: <input type="text">                <select size="1" name="star" style="position: relative; left: 250px; top: -19px;">
+                  <option>⭐⭐⭐⭐⭐</option>
+                  <option>⭐⭐⭐⭐</option>
+                  <option>⭐⭐⭐</option>
+                  <option>⭐⭐</option>
+                  <option>⭐</option>
+                  </select>
+
+                  
+                <textarea rows="8" cols="50" placeholder="新增商品評論..."></textarea>
+                <input type="submit" ><input type="reset" >
+              </form>
+        </main>
+    </section>
+
+  <footer>
+    <h4>Copyrgiht @ 2023 All rights reserved</h4>
+  </footer>
+</body>
+</html>

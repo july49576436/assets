@@ -1,0 +1,169 @@
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #bfafa6;
+    color: white;
+    margin: 0px;
+    padding: 15px;
+    position: relative;
+}
+
+.logo {
+    width: 160px;
+    height: 160px;
+    border: solid #908781;
+    background-color: #908781;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.iconarea {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+}
+
+.icon:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.offcanvas-header {
+    background-color: #D5C9C0;
+}
+
+.offcanvas-body {
+    background-color: #E6E2DF;
+}
+
+nav {
+    text-align: center;
+    background-color: #857B74;
+}
+
+nav a {
+    padding: 16px;
+    color: white;
+    font-size: large;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #908781;
+    color: white
+}
+
+.slide-pic {
+    width: 100%;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.animationimg {
+    width: 100%;
+    padding: 30px;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.description {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    padding: 30px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #6E6A6F;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-family: auto;
+}
+
+.map {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* 購物車內 */
+.car1 {
+    position: relative;
+    left: 60px;
+}
+
+.car1 img {
+    margin: 10px;
+}
+
+.plusminus {
+    position: relative;
+
+}
+
+h6,
+h4 {
+    position: relative;
+    left: 20px;
+}
+
+.bin {
+    position: relative;
+    left: -70px;
+    top: -35px;
+}
+
+.count {
+    position: relative;
+    left: 28px;
+}
+
+.submit {
+    position: relative;
+    left: 85px;
+    width: 150px;
+    height: 50px;
+    background-color: #91735e;
+    border-width: 0;
+    color: white;
+}
+
+.submit:hover {
+    background-color: #ab9586;
+}
+
+
+.number {
+    position: relative;
+    left: 20px;
+}

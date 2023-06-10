@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登入和註冊</title>
+  <link rel="stylesheet" href="css/member.css">
+  <script>
+    function showLoginForm() {
+      document.getElementById("loginForm").style.display = "block";
+      document.getElementById("registerForm").style.display = "none";
+      document.getElementById("signInButton").classList.add("active");
+      document.getElementById("registerButton").classList.remove("active");
+    }
+
+    function showRegisterForm() {
+      document.getElementById("loginForm").style.display = "none";
+      document.getElementById("registerForm").style.display = "block";
+      document.getElementById("signInButton").classList.remove("active");
+      document.getElementById("registerButton").classList.add("active");
+    }
+    window.onload = function() {
+      showLoginForm();
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="images/logo.jpg" height="56px"weight="400px"></a>
+  </header>
+  <nav>
+    <a href="index.html">首頁</a>
+    <a href="aboutus.html">關於我們</a>
+    <a href="products.html">所有商品</a>
+    <a href="modifyinfor.html">會員中心</a>
+    <a href="board.html">留言板</a>
+  </nav>
+  <div class="iconarea">
+    <a href="control.html" style="color:white ;text-decoration:none">後臺管理</a>
+    <a href="contactus.html"><img class="icon" src="images/chat.png"></a>
+    <a href="member.html"><img class="icon" src="images/member.png"></a>
+  </div>
+  
+    <section>
+      <span id="signInButton" class="link-button txt1" onclick="showLoginForm()">Sign in</span>
+      <span id="registerButton" class="link-button txt2" onclick="showRegisterForm()">Register</span>
+      
+      <form id="loginForm" class="form">
+        <hr>
+        <label for="username">帳號:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">密碼:</label>
+        <input type="password" id="password" name="password" required><br>
+        <input class="btn" type="submit" value="登入">
+      </form>
+      <form id="registerForm" style="display: none;" class="form">
+        <hr>
+        <label for="newUsername">帳號:</label>
+        <input type="text" id="newUsername" name="newUsername" required><br>
+        <label for="name">姓名:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="newPassword">密碼:</label>
+        <input type="password" id="newPassword" name="newPassword" required><br>
+        <label for="newPassword_again">確認密碼:</label>
+        <input type="password" id="newPassword_again" name="newPassword_again" required><br>
+        <label for="mail">電子信箱:</label>
+        <input type="email" id="mail" name="mail" required><br>
+        <label for="address">聯絡地址:</label>
+        <input type="password" id="address" name="address" required><br>
+        <label for="phone">手機號碼:</label>
+        <input type="password" id="phone" name="phone" required><br>
+        <input class="btn" type="submit" value="註冊">
+      </form>
+    </section>
+  <footer>
+    <h4>Copyrgiht @ 2023 All rights reserved</h4>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聯絡我們</title>
+    <link rel="stylesheet" href="css/contactus.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+          <img src="images/logo.jpg" height="56px"weight="400px"></a>
+    </header>
+    <nav>
+        <a href="index.html">首頁</a>
+        <a href="aboutus.html">關於我們</a>
+        <a href="products.html">所有商品</a>
+        <a href="modifyinfor.html">會員中心</a>
+        <a href="board.html">留言板</a>
+    </nav>
+    <div class="iconarea">
+        <a href="contactus.html"><img class="icon" src="images/chat.png"></a>
+        <a href="member.html"><img class="icon" src="images/member.png"></a>
+    </div>
+    <h2>聯絡我們</h2>
+    <div class="card">
+        <form method="post" action="mailto:chsfy54@gmail.com?subject=xxxx" enctype="text/plain">
+        <div class="txt">
+            姓名:<input type="text" name="user_name" required><br>
+            信箱:<input type="email" required><br>
+        </div>
+        請留下您要諮詢的問題，我們將會用您提供的e-mail進行回覆。<br>
+        <textarea cols="50" rows="15" wrap="hard" required> </textarea><br>
+        <input class="btn" type="submit" value="送出" />
+        <input class="btn" type="reset" value="取消" />
+        </form>
+    </div>
+</body>
+<footer>
+    <h4>Copyrgiht @ 2023 All rights reserved</h4>
+</footer>
+</html>

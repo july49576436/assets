@@ -1,0 +1,478 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    overflow-x: hidden;
+    height: 100%;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+    min-height: 100%;
+}
+
+/* 開頭 */
+header {
+    position: absolute;
+    left: 0;
+
+
+}
+
+nav {
+    text-align: center;
+    background-color: #857B74;
+}
+
+nav a {
+    padding: 16px;
+    color: white;
+    font-size: large;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #908781;
+    color: white
+}
+
+.iconarea {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+
+.icon:hover {
+    transform: scale(1.2, 1.2);
+}
+
+/* 商品照片 */
+.show {
+    position: relative;
+    left: 140px;
+    top: 80px;
+    float: left;
+    width: 32%;
+    height: 350px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* 以下為幻燈片 */
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 20%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/* 商品文字 */
+aside {
+    position: relative;
+    left: 200px;
+    top: 100px;
+    float: right;
+    width: 55%;
+}
+
+.introduce {
+    width: 50%;
+    height: auto;
+}
+
+.goshop input[type="submit"] {
+    display: inline-block;
+    width: 60%;
+    padding: 12px 0px;
+    margin-top: 15px;
+    font-size: 20px;
+    background-color: #857B74;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.price {
+    color: black;
+    font-size: 40px;
+}
+
+
+/* 評論區 */
+.content2 {
+    width: 1150px;
+    position: relative;
+    top: 30px;
+    left: 100px;
+    height: 530px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.subtitle2 {
+    position: relative;
+    left: 0px;
+    top: 45px;
+    font-family: 'Noto Serif TC', serif;
+    color: black
+}
+
+/* 評論區內容 */
+.main2 {
+    position: relative;
+    top: -190px;
+    left: -123px;
+    width: 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    grid-gap: 30px;
+    text-align: center;
+    grid-area: auto;
+}
+
+/* 圖片在左 */
+
+
+.card2 {
+    /*background-color: white;*/
+    position: relative;
+    top: -90px;
+    left: 350px;
+    height: 150px;
+    width: 600px;
+    border-radius: 10px;
+    /*背景圖*/
+
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    text-align: center;
+}
+
+.h33 {
+    position: relative;
+    top: 160px;
+    left: -390px;
+    text-align: center;
+    font-family: 'Noto Serif TC', serif;
+    line-height: 80%;
+    padding: 0px;
+
+}
+
+/* 粉粉 */
+.wrap img {
+    position: relative;
+    left: -347px;
+    top: 30px;
+    border-radius: 10%;
+
+}
+
+.wrap img:hover {
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+
+.wrap {
+    position: relative;
+    left: 200px;
+    top: 260px;
+    text-align: center;
+    background-color: #fcf3ea;
+    width: 1000px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.h46 {
+    font-family: 'Noto Serif TC', serif;
+    line-height: 160%;
+    text-align: left;
+    left: 2em;
+    top: 30px;
+
+}
+
+/* 星星 */
+.ratings {
+    position: relative;
+    left: -300px;
+    top: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    color: #ddd;
+    /*背景星星顏色*/
+    overflow: hidden;
+    font-size: 20px;
+    /*調整字體大小可放大縮小星星*/
+    text-shadow: 0px 1px 0 #999;
+    z-index: 6;
+}
+
+.full_star {
+    width: 80%;
+    /*調整寬度可變更星等*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #D56A16;
+    /*前景星星顏色*/
+}
+
+.full_starr {
+    width: 100%;
+    /*調整寬度可變更星等*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #D56A16;
+    /*前景星星顏色*/
+}
+
+
+
+
+/* 評論二 */
+.card3 {
+    /*background-color: white;*/
+    position: relative;
+    top: -90px;
+    left: 353px;
+    height: 150px;
+    width: 600px;
+    border-radius: 10px;
+    /*背景圖*/
+
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    text-align: center;
+}
+
+/* 粉粉 */
+.wrap2 img {
+    position: relative;
+    left: -347px;
+    top: 20px;
+    border-radius: 10%;
+
+}
+
+.wrap2 img hover {
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+
+.wrap2 {
+    position: relative;
+    left: 175px;
+    top: -190px;
+    text-align: center;
+    background-color: #fcf3ea;
+    width: 1000px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* 寫留言 */
+.content3 {
+    width: 1150px;
+    position: relative;
+    top: -150px;
+    left: 100px;
+    height: 330px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.main3 {
+    position: relative;
+    top: 90px;
+    left: 380px;
+    width: 20%;
+    text-align: left;
+    grid-area: auto;
+}
+
+footer {
+    background-color: #6E6A6F;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+
+.container-all {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    margin-right: -350px;
+    width: 400px;
+    height: 818px;
+    background-color: #D5C9C0;
+    color: white;
+    transition: 1s;
+    position: relative;
+    padding: 50px;
+    overflow-y: scroll;
+}
+
+#sidebar.active {
+    margin-right: 0px;
+}
+
+.collapse-btn {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    background-color: #6E6A6F;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.collapse-btn:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.car1 img {
+    margin: 10px;
+}
+
+.plusminus {
+    position: relative;
+
+}
+
+h6,
+h4 {
+    position: relative;
+    left: 20px;
+}
+
+.bin {
+    position: relative;
+    left: -20px;
+    top: -30px;
+}
+
+.submitbtn {
+    display: flex;
+    justify-content: center;
+}
+
+.submit {
+    width: 150px;
+    height: 50px;
+    background-color: #91735e;
+    border-width: 0;
+    color: white;
+}
+
+.submit:hover {
+    background-color: #ab9586;
+}
+
+
+.number {
+    position: relative;
+    left: 20px;
+}

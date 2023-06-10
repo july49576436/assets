@@ -1,0 +1,183 @@
+body {
+    background-color: #f5f4ef;
+    margin: 0px;
+    /* overflow-x: hidden; */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    position: absolute;
+    left: 0;
+}
+
+nav {
+    text-align: center;
+    background-color: #857B74;
+}
+
+nav a {
+    padding: 16px;
+    color: white;
+    font-size: large;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #908781;
+    color: white
+}
+
+.iconarea {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.icon:hover {
+    transform: scale(1.2, 1.2);
+}
+
+main {
+    padding: 20px 0px;
+}
+
+.area {
+    display: flex;
+}
+
+section {
+    margin: 20px;
+    width: 800px;
+    height: 1100px;
+    line-height: 40px;
+    flex: 8;
+}
+
+.membercenter {
+    text-align: center;
+}
+
+.title {
+    background-color: #908781;
+    column-fill: balance;
+    color: white;
+    padding: 5px;
+}
+
+aside {
+    margin: 80px 30px;
+    flex: 2;
+}
+
+h2 {
+    color: #857B74;
+}
+
+.txt1 {
+    text-decoration: none;
+    color: #908781;
+}
+
+.txt1:hover {
+    border-bottom: 3px solid #908781;
+}
+
+/* 按鈕 */
+.btn {
+    background-color: #736f72;
+    border-width: 0;
+    border-radius: 13%;
+    color: white;
+    width: 80px;
+    height: 25px;
+}
+
+.btn:hover {
+    background-color: #ab8d78e0;
+}
+
+#sidebar {
+    flex: 2;
+    margin-right: 0px;
+    width: 400px;
+    height: 818px;
+    background-color: #D5C9C0;
+    color: white;
+    transition: 1s;
+    position: relative;
+    padding: 50px;
+    overflow-y: scroll;
+}
+
+#sidebar.active {
+    margin-right: 0px;
+}
+
+/* .collapse-btn {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    background-color: #6E6A6F;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.collapse-btn:hover {
+    transform: scale(1.2, 1.2);
+} */
+
+.car1 img {
+    margin: 10px;
+}
+
+.plusminus {
+    position: relative;
+
+}
+
+h6,
+h4 {
+    position: relative;
+    left: 20px;
+}
+
+.bin {
+    position: relative;
+    left: -20px;
+    top: -30px;
+}
+
+.submitbtn {
+    display: flex;
+    justify-content: center;
+}
+
+.submit {
+    width: 150px;
+    height: 50px;
+    background-color: #91735e;
+    border-width: 0;
+    color: white;
+}
+
+.submit:hover {
+    background-color: #ab9586;
+}
+
+
+.number {
+    position: relative;
+    left: 20px;
+}
+
+footer {
+    background-color: #6E6A6F;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
